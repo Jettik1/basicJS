@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header><div class="yellow width240">FF</div></header>
+    <!-- ЧТОБЫ ПРОВЕРИТЬ ПРИМЕР - УБАРИ NONE ИЗ КЛАССА АТРИБУТА -->
+    <!-- Пример с выбором селекторов -->
+
+<!-- Примеры взяты с видео https://youtu.be/maPRR_jjyOE -->
+
+
+    <div class="dom-example none">
+        <!-- ((h$.heading-$>lorem2)+p>lorem10)*3 - Emmet форма -->
+        <h1 class="heading-1" id="heading-1">Lorem, ipsum.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ipsam!</p>
+        <h2 class="heading-2">Tempore, voluptas.</h2>
+        <p>Quas ab corporis repudiandae ipsa doloribus perferendis sed eligendi architecto?</p>
+        <h3 class="heading-3">Voluptatibus, molestias!</h3>
+        <p>Velit, quas. Libero laudantium, illum aliquid consequatur exercitationem eaque facere!</p>
+    </div>
+
+    <!-- Пример с атрибутаи -->
+    <div class="dom-example none"> 
+        <div class="exmaple-block">
+            <img src="./img/owl-diploma.png" alt="Логотип" id="logo"><br>
+            <input type="submit" id="button" value="Кнопка">
+        </div>
+    </div>
+
+    <!-- Прослушка событий 2 . Форма -->
+    <div class="dom-example none"> 
+        <form action="">
+            <input type="text" class="input-text" id="input-text" placeholder="Reapeter/Потворятор">
+            <div class="text-block" id="text-block"></div>
+        </form>
+    </div>
+    <!-- Прослушка событий 3 . Event -->
+    <div class="dom-example none"> 
+        <h2>Object Event</h2>
+        <h3>Event list</h3>
+        <ul id="list">
+            <li>Watch</li>
+            <li>Something </li>
+            <li><button>Button</button></li>
+            <li>Do some</li>
+        </ul>
+    </div>
+
+    <!-- Создание элементов -->
+    <div class="none">
+        <h2>Создание и копирование элементов</h2>
+        <div id="elementContainer"></div>
+    </div>
+
+    <!-- ToDO список задач -->
+    <!-- .simple-todo>(.tasks-wrapper>h2+ul#todo-list>li*3)+form.#todo-form>input#todo-input+button -->
+
+    <div class="simple-todo none">
+        <div class="tasks-wrapper">
+            <h2></h2>
+            <ul id="todo-list">
+                <li>Посмотреть вебинар</li>
+                <li>Написатть конспект</li>
+                <li>Повторить код с урока</li>
+            </ul>
+        </div>
+        <form action="" class="" id="todo-form">
+            <input type="text" id="todo-input" placeholder="Введите значение">
+            <button type="submit" id='button2'>Добавить задачу</button>
+        </form>
+    </div>
+
+    <div class="dom-example none">
+        <div class="counter" id="counter">0</div>
+        <button id="start">Start</button>
+        <button id="pause">Stop</button>
+        <button id="reset">Reset</button>
+    </div>
+<!-- 
+    .fetch-example>h2+.currency-box>(.currency-row#dollar>.currency-info+span)+.currency-row#euro>.currency-info+span -->
+    <div class="fetch-example">
+        <h2>Актуальные курсы валют</h2>
+        <div class="currency-box">
+            <div class="currency-row" id="dollar">
+                <div class="currency-info">&#36</div>
+                <span id="usd">76</span> рублей за доллар
+            </div>
+            <div class="currency-row" id="euro">
+                <div class="currency-info">&#8364</div>
+                <span id="eur">76</span> рублей за евро
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
