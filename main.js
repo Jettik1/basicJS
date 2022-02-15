@@ -47,7 +47,9 @@ doSome(summ, 10);
   console.log(
     `Анонимная, самовызывающаяся функция со своей областью видимости`
   );
+  console.log(this.name)
 })();
+
 
 (function summ(a, b) {
   console.log(a + b);
